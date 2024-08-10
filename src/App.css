@@ -31,9 +31,6 @@ main {
   border-radius: 1rem;
 
   display: flex;
-  gap: 1rem;
-
-  padding: 2.9rem 3rem;
   box-sizing: border-box;
 }
 
@@ -45,11 +42,13 @@ main {
 
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 
   font-weight: 700;
   font-size: 1rem;
   color: hsl(186, 14%, 43%);
+
+  padding: 2.9rem 3rem;
 }
 
 
@@ -105,7 +104,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .button-grid > * {
@@ -146,6 +145,7 @@ main {
 .num-people {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .num-people > input {
@@ -159,5 +159,57 @@ main {
 
 
 .display {
-  width: 50%;
+  padding: 2rem 2rem 2rem 0rem;
+  box-sizing: border-box;
+}
+
+
+.amount-container {
+  background-color: hsl(183, 100%, 15%);
+  height: 100%;
+  width: 26rem;
+
+  padding: 3.5rem 2.5rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.amounts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount > span:nth-child(1) {
+  color: white;
+  font-weight: 700;
+}
+
+small {
+
+  font-weight: 400;
+}
+
+.cost {
+  font-size: 2.5rem;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+}
+
+
+.reset {
+  height: 3rem;
+  transform: translateY(1rem);
+
+  color: hsl(183, 100%, 15%);
+  font-size: 1.25rem;
+  font-weight: 700;
 }
