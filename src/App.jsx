@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css"
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    
+
+    return (
+        <div className="container">
+            <header>
+                <h1>SPLI<br />TTER</h1>
+            </header>
+            <main>
+
+                <section className="calc">
+
+                    <div className="bill-price">
+                        <label htmlFor="price">Bill</label>
+                        <input type="number" name="price" id="price"/>
+                    </div>
+
+                    <div>
+                        <p>Select Tip %</p>
+
+                        <div className="button-grid">
+                            <button type="button">5%</button>
+                            <button type="button">10%</button>
+                            <button type="button">15%</button>
+                            <button type="button">25%</button>
+                            <button type="button">50%</button>
+                            <input type="number" name="tip" id="tip" placeholder="Custom"/>
+                        </div>
+                    </div>
+
+                    <div className="num-people">
+                        <label htmlFor="people">Number of People</label>
+                        <input type="number" name="people" id="people"/>
+                    </div>
+
+                </section>
+                
+                <section className="display">
+
+                </section>
+            </main>
+        </div>
+    )
 }
 
 export default App
