@@ -51,11 +51,11 @@ const App = () => {
     };
 
     return (
-        <div className="container">
+        <>
             <header>
                 <h1>SPLI<br />TTER</h1>
             </header>
-            <main>
+            <main className="main">
 
                 <section className="calc">
 
@@ -106,7 +106,7 @@ const App = () => {
 
                 </section>
             </main>
-        </div>
+        </>
     )
 }
 
